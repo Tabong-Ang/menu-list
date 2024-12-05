@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Sofadi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/155891814 (1).png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="main-content">
+      <div>
+        <h2>Desserts</h2>
+        <div class="menu-list">
+          <div class="menu-card one">
+            <div
+              class="menu-card"
+              data-name="Waffle with Berries"
+              data-price="6.50"
+            >
+              <img
+                src="./assets/images/image-tiramisu-thumbnail.jpg"
+                alt="Waffle with Berries"
+                srcset="
+                  ./assets/images/image-waffle-mobile.jpg   480w,
+                  ./assets/images/image-waffle-tablet.jpg  1024w,
+                  ./assets/images/image-waffle-desktop.jpg 1600w
+                "
+                sizes="(max-width: 480px) 100vw, 
+                        (max-width: 1024px) 80vw, 
+                        60vw"
+              />
+              <div class="product-card">
+                <div class="front">
+                  <button class="add-to-cart-btn">
+                    <svg
+                      class="custom-class"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>cart-plus</title>
+                      <path
+                        d="M11 9H13V6H16V4H13V1H11V4H8V6H11M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8Z"
+                      /></svg
+                    >Add to Cart
+                  </button>
+                </div>
+                <div class="back">
+                  <button class="minus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>minus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>plus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <h5>Waffle</h5>
+              <h4>Waffle with Berries</h4>
+              <h3>$6.50</h3>
+            </div>
+          </div>
+          <div class="menu-card two">
+            <div
+              class="menu-card"
+              data-name="Vanilla Bean Crème Brûlée"
+              data-price="7.00"
+            >
+              <img
+                src="./assets/images/image-creme-brulee-thumbnail.jpg"
+                alt="Vanilla Bean Crème Brûlée"
+                srcset="
+                  ./assets/images/image-creme-brulee-mobile.jpg   480w,
+                  ./assets/images/image-creme-brulee-tablet.jpg  1024w,
+                  ./assets/images/image-creme-brulee-desktop.jpg 1600w
+                "
+                sizes="(max-width: 480px) 100vw, 
+                        (max-width: 1024px) 80vw, 
+                        60vw"
+              />
+              <div class="product-card">
+                <div class="front">
+                  <button class="add-to-cart-btn">
+                    <svg
+                      class="custom-class"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>cart-plus</title>
+                      <path
+                        d="M11 9H13V6H16V4H13V1H11V4H8V6H11M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8Z"
+                      /></svg
+                    >Add to Cart
+                  </button>
+                </div>
+                <div class="back">
+                  <button class="minus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>minus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>plus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <h5>Crème Brûlée</h5>
+              <h4>Vanilla Bean Crème Brûlée</h4>
+              <h3>$7.00</h3>
+            </div>
+          </div>
+          <div class="menu-card three">
+            <div
+              class="menu-card"
+              data-name="Macaron Mix of Five"
+              data-price="8.00"
+            >
+              <img
+                src="./assets/images/image-macaron-thumbnail.jpg"
+                alt="Macaron Mix of Five"
+                srcset="
+                  ./assets/images/image-macaron-mobile.jpg   480w,
+                  ./assets/images/image-macaron-tablet.jpg  1024w,
+                  ./assets/images/image-macaron-desktop.jpg 1600w
+                "
+                sizes="(max-width: 480px) 100vw, 
+                        (max-width: 1024px) 80vw, 
+                        60vw"
+              />
+              <div class="product-card">
+                <div class="front">
+                  <button class="add-to-cart-btn">
+                    <svg
+                      class="custom-class"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>cart-plus</title>
+                      <path
+                        d="M11 9H13V6H16V4H13V1H11V4H8V6H11M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8Z"
+                      /></svg
+                    >Add to Cart
+                  </button>
+                </div>
+                <div class="back">
+                  <button class="minus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>minus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>plus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <h5>Macaron</h5>
+              <h4>Macaron Mix of Five</h4>
+              <h3>$8.00</h3>
+            </div>
+          </div>
+          <div class="menu-card four">
+            <div
+              class="menu-card"
+              data-name="Classic Tiramisu"
+              data-price="5.50"
+            >
+              <img
+                src="./assets/images/image-tiramisu-thumbnail.jpg"
+                alt="Classic Tiramisu"
+                srcset="
+                  ./assets/images/image-tiramisu-mobile.jpg   480w,
+                  ./assets/images/image-tiramisu-tablet.jpg  1024w,
+                  ./assets/images/image-tiramisu-desktop.jpg 1600w
+                "
+                sizes="(max-width: 480px) 100vw, 
+                        (max-width: 1024px) 80vw, 
+                        60vw"
+              />
+              <div class="product-card">
+                <div class="front">
+                  <button class="add-to-cart-btn">
+                    <svg
+                      class="custom-class"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>cart-plus</title>
+                      <path
+                        d="M11 9H13V6H16V4H13V1H11V4H8V6H11M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8Z"
+                      /></svg
+                    >Add to Cart
+                  </button>
+                </div>
+                <div class="back">
+                  <button class="minus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>minus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>plus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <h5>Tiramisu</h5>
+              <h4>Classic Tiramisu</h4>
+              <h3>$5.50</h3>
+            </div>
+          </div>
+          <div class="menu-card five">
+            <div
+              class="menu-card"
+              data-name="Pistachio Baklava"
+              data-price="4.00"
+            >
+              <img
+                src="./assets/images/image-baklava-thumbnail.jpg"
+                alt="Pistachio Baklava"
+                srcset="
+                  ./assets/images/image-baklava-mobile.jpg   480w,
+                  ./assets/images/image-baklava-tablet.jpg  1024w,
+                  ./assets/images/image-baklava-desktop.jpg 1600w
+                "
+                sizes="(max-width: 480px) 100vw, 
+                        (max-width: 1024px) 80vw, 
+                        60vw"
+              />
+              <div class="product-card">
+                <div class="front">
+                  <button class="add-to-cart-btn">
+                    <svg
+                      class="custom-class"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>cart-plus</title>
+                      <path
+                        d="M11 9H13V6H16V4H13V1H11V4H8V6H11M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8Z"
+                      /></svg
+                    >Add to Cart
+                  </button>
+                </div>
+                <div class="back">
+                  <button class="minus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>minus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>plus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <h5>Baklava</h5>
+              <h4>Pistachio Baklava</h4>
+              <h3>$4.00</h3>
+            </div>
+          </div>
+          <div class="menu-card six">
+            <div
+              class="menu-card"
+              data-name="Lemon Meringue Pie"
+              data-price="5.00"
+            >
+              <img
+                src="./assets/images/image-meringue-thumbnail.jpg"
+                alt="Lemon Meringue Pie"
+                srcset="
+                  ./assets/images/image-meringue-mobile.jpg   480w,
+                  ./assets/images/image-meringue-tablet.jpg  1024w,
+                  ./assets/images/image-meringue-desktop.jpg 1600w
+                "
+                sizes="(max-width: 480px) 100vw, 
+                        (max-width: 1024px) 80vw, 
+                        60vw"
+              />
+              <div class="product-card">
+                <div class="front">
+                  <button class="add-to-cart-btn">
+                    <svg
+                      class="custom-class"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>cart-plus</title>
+                      <path
+                        d="M11 9H13V6H16V4H13V1H11V4H8V6H11M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8Z"
+                      /></svg
+                    >Add to Cart
+                  </button>
+                </div>
+                <div class="back">
+                  <button class="minus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>minus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>plus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <h5>Pie</h5>
+              <h4>Lemon Meringue Pie</h4>
+              <h3>$5.00</h3>
+            </div>
+          </div>
+          <div class="menu-card seven">
+            <div
+              class="menu-card"
+              data-name="Red Velvet Cake"
+              data-price="4.50"
+            >
+              <img
+                src="./assets/images/image-cake-thumbnail.jpg"
+                alt="Red Velvet Cake"
+                srcset="
+                  ./assets/images/image-cake-mobile.jpg   480w,
+                  ./assets/images/image-cake-tablet.jpg  1024w,
+                  ./assets/images/image-cake-desktop.jpg 1600w
+                "
+                sizes="(max-width: 480px) 100vw, 
+                        (max-width: 1024px) 80vw, 
+                        60vw"
+              />
+              <div class="product-card">
+                <div class="front">
+                  <button class="add-to-cart-btn">
+                    <svg
+                      class="custom-class"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>cart-plus</title>
+                      <path
+                        d="M11 9H13V6H16V4H13V1H11V4H8V6H11M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8Z"
+                      /></svg
+                    >Add to Cart
+                  </button>
+                </div>
+                <div class="back">
+                  <button class="minus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>minus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>plus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <h5>Cake</h5>
+              <h4>Red Velvet Cake</h4>
+              <h3>$4.50</h3>
+            </div>
+          </div>
+          <div class="menu-card eight">
+            <div
+              class="menu-card"
+              data-name="Salted Caramel Brownie"
+              data-price="5.50"
+            >
+              <img
+                src="./assets/images/image-brownie-thumbnail.jpg"
+                alt="Salted Caramel Brownie"
+                srcset="
+                  ./assets/images/image-brownie-mobile.jpg   480w,
+                  ./assets/images/image-brownie-tablet.jpg  1024w,
+                  ./assets/images/image-brownie-desktop.jpg 1600w
+                "
+                sizes="(max-width: 480px) 100vw, 
+                        (max-width: 1024px) 80vw, 
+                        60vw"
+              />
+              <div class="product-card">
+                <div class="front">
+                  <button class="add-to-cart-btn">
+                    <svg
+                      class="custom-class"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>cart-plus</title>
+                      <path
+                        d="M11 9H13V6H16V4H13V1H11V4H8V6H11M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8Z"
+                      /></svg
+                    >Add to Cart
+                  </button>
+                </div>
+                <div class="back">
+                  <button class="minus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>minus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>plus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <h5>Brownie</h5>
+              <h4>Salted Caramel Brownie</h4>
+              <h3>$4.50</h3>
+            </div>
+          </div>
+          <div class="menu-card nine">
+            <div
+              class="menu-card"
+              data-name="Vanilla Panna Cotta"
+              data-price="6.50"
+            >
+              <img
+                src="./assets/images/image-panna-cotta-thumbnail.jpg"
+                alt="Vanilla Panna Cotta"
+                srcset="
+                  ./assets/images/image-panna-cotta-mobile.jpg   480w,
+                  ./assets/images/image-panna-cotta-tablet.jpg  1024w,
+                  ./assets/images/image-panna-cotta-desktop.jpg 1600w
+                "
+                sizes="(max-width: 480px) 100vw, 
+                        (max-width: 1024px) 80vw, 
+                        60vw"
+              />
+              <div class="product-card">
+                <div class="front">
+                  <button class="add-to-cart-btn">
+                    <svg
+                      class="custom-class"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>cart-plus</title>
+                      <path
+                        d="M11 9H13V6H16V4H13V1H11V4H8V6H11M7 18C5.9 18 5 18.9 5 20S5.9 22 7 22 9 21.1 9 20 8.1 18 7 18M17 18C15.9 18 15 18.9 15 20S15.9 22 17 22 19 21.1 19 20 18.1 18 17 18M7.2 14.8V14.7L8.1 13H15.5C16.2 13 16.9 12.6 17.2 12L21.1 5L19.4 4L15.5 11H8.5L4.3 2H1V4H3L6.6 11.6L5.2 14C5.1 14.3 5 14.6 5 15C5 16.1 5.9 17 7 17H19V15H7.4C7.3 15 7.2 14.9 7.2 14.8Z"
+                      /></svg
+                    >Add to Cart
+                  </button>
+                </div>
+                <div class="back">
+                  <button class="minus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>minus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,13H17V11H7"
+                      />
+                    </svg>
+                  </button>
+                  <span class="quantity">1</span>
+                  <button class="plus-btn">
+                    <svg
+                      class="colour"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>plus-circle-outline</title>
+                      <path
+                        d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <h5>Panna Cotta</h5>
+              <h4>Vanilla Panna Cotta</h4>
+              <h3>6.50</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="order-review">
+        <div class="cart-order">
+        <h2 class="your-cart">Your Cart (0)</h2>
+        <ul class="cart-items"></ul>
+        <div class="order-total"><span></span></div>
+        <img class="empty-cart-image" src="./assets/images/illustration-empty-cart.svg" alt="">
+        <p class="items-to-show">Your added items will appear here</p>
+        <button class="confirm-order-btn">Confirm Order</button>
+      </div>
+    </div>
+    <div id="order-confirmation" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./assets/images/icon-order-confirmed.svg" alt="icon order confirmed">
+        <h1>Order Confirmed!</h1>
+        <p class="enjoy">We hope you enjoy your food!</p>
+        <div class="order-summary">
+          <ul class="summary-items"></ul>
+          <div class="summary-total"><span>Total: $0.00</span></div>
+        </div>
+        <button class="new-order-btn">Start New Order</button>
+      </div>
+    </div>
+  </body>
+</html>
